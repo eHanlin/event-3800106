@@ -8,7 +8,9 @@ var Q = require("q");
 var util = require("gulp-template-util");
 
 function buildStyle() {
-  console.log("===============================> func buildStyle() sucessful");
+  console.log(
+    "==============================================================> func buildStyle() sucessful"
+  );
   return es.map(function(file, cb) {
     less.render(
       file.contents.toString(),
@@ -30,7 +32,9 @@ function buildStyle() {
 }
 
 function libTask(dest) {
-  console.log("===============================> func libTask() sucessful");
+  console.log(
+    "==============================================================> func libTask() sucessful"
+  );
   return function() {
     var packageJson = JSON.parse(
       fs.readFileSync("package.json", "utf8").toString()
@@ -50,7 +54,7 @@ function libTask(dest) {
 
 function copyStaticTask(dest) {
   console.log(
-    "===============================> func copyStaticTask() sucessful"
+    "==============================================================> func copyStaticTask() sucessful"
   );
   return function() {
     return gulp
@@ -65,7 +69,9 @@ function copyStaticTask(dest) {
 }
 
 function cleanTask() {
-  console.log("===============================> func cleanTask sucessful");
+  console.log(
+    "==============================================================> func cleanTask sucessful"
+  );
   return del(["dist", ""]);
 }
 
