@@ -62,6 +62,7 @@ let uploadGCP = (dirFilePath, filePath) => {
     })
 }
 
+// 公開權限
 let makePublic = (dirFilePath, filePath) => {
   storage
     .bucket(bucketName)
