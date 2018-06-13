@@ -3,8 +3,8 @@ const fs = require('fs')
 const path = require('path')
 const bucketName = `tutor-events`
 const projectId = `tutor-204108`
-const projectName = `3800`
-const gcpKeyFile = `./tutor-204108.json`
+const projectName = `3800106`
+const gcpKeyFile = `./tutor.json`
 
 const storage = new Storage({
   projectId: projectId,
